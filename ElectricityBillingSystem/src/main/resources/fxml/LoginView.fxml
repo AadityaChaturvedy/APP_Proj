@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" spacing="15.0" styleClass="root" stylesheets="@/css/light-theme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebill.controllers.LoginController">
+   <children>
+      <Label fx:id="titleLabel" text="System Login">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox spacing="5.0">
+         <children>
+            <Label fx:id="usernameLabel" text="Username" />
+            <TextField fx:id="usernameField" promptText="admin" />
+         </children>
+      </VBox>
+      <VBox spacing="5.0">
+         <children>
+            <Label fx:id="passwordLabel" text="Password" />
+            <PasswordField fx:id="passwordField" promptText="admin" />
+         </children>
+      </VBox>
+      <Button fx:id="loginButton" defaultButton="true" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <Label fx:id="errorLabel" styleClass="error-label" text="Invalid credentials." textFill="RED" />
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

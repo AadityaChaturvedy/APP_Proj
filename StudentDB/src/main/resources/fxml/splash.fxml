@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" 
+            fx:controller="com.example.studentdb.controller.SplashController" 
+            prefWidth="600" prefHeight="400" styleClass="root-gradient">
+    <children>
+        <VBox alignment="CENTER" spacing="20" prefWidth="600" prefHeight="400">
+            <ImageView fitWidth="140" fitHeight="140">
+                <image>
+                    <Image url="/icon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="splashLabel" text="Student DB" styleClass="splash-title" />
+        </VBox>
+    </children>
+</AnchorPane>

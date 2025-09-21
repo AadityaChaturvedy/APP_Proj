@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentdb.controller.MainController" prefWidth="1000" prefHeight="650">
+
+    <!-- Top Bar -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="topbar">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Student Management" styleClass="title-label"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <TextField fx:id="searchField" promptText="Search by roll or name..."/>
+            <Button text="Search" onAction="#onSearch"/>
+            <Button text="Add Student" onAction="#onAdd"/>
+        </HBox>
+    </top>
+
+    <!-- Center Table -->
+    <center>
+        <VBox spacing="8">
+            <padding>
+                <Insets top="12" right="12" bottom="12" left="12"/>
+            </padding>
+            <TableView fx:id="table" prefHeight="520" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="colName" text="Name" prefWidth="220"/>
+                    <TableColumn fx:id="colRoll" text="Roll" prefWidth="140"/>
+                    <TableColumn fx:id="colCourse" text="Course" prefWidth="140"/>
+                    <TableColumn fx:id="colBatch" text="Batch" prefWidth="100"/>
+                    <TableColumn fx:id="colDob" text="DOB" prefWidth="110"/>
+                    <TableColumn fx:id="colMail" text="Mail" prefWidth="170"/>
+                    <TableColumn fx:id="colCgpa" text="CGPA" prefWidth="70"/>
+                </columns>
+            </TableView>
+            <Label fx:id="statusLabel"/>
+        </VBox>
+    </center>
+
+    <!-- Bottom Buttons -->
+    <bottom>
+        <HBox spacing="10" alignment="CENTER_RIGHT" styleClass="bottom-buttons">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Edit" onAction="#onEdit"/>
+            <Button text="Delete" onAction="#onDelete"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

@@ -1,0 +1,71 @@
+{
+  "ui": {
+    "login_title": "सिस्टम लॉगिन",
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "login_button": "लॉग इन करें",
+    "login_error": "अमान्य उपयोगकर्ता नाम या पासवर्ड।",
+    "dashboard_title": "एडमिन डैशबोर्ड",
+    "search_placeholder": "नाम, मीटर नंबर, शहर से खोजें...",
+    "add_button": "बिल जोड़ें",
+    "edit_button": "बिल संपादित करें",
+    "delete_button": "बिल हटाएं",
+    "save_button": "सहेजें",
+    "cancel_button": "रद्द करें",
+    "chatbot_title": "चैटबॉट सहायक"
+  },
+  "table": {
+    "meter_number": "मीटर नं.",
+    "customer_name": "ग्राहक का नाम",
+    "city": "शहर",
+    "units": "यूनिट",
+    "amount": "राशि",
+    "status": "स्थिति"
+  },
+  "form": {
+    "add_title": "नया बिल जोड़ें",
+    "edit_title": "बिल संपादित करें",
+    "customer_name": "ग्राहक का नाम*",
+    "meter_number": "मीटर नंबर",
+    "address": "पता",
+    "city": "शहर",
+    "state": "राज्य",
+    "phone": "फ़ोन*",
+    "email": "ईमेल*",
+    "units_consumed": "खपत की गई यूनिट*",
+    "billing_month": "बिलिंग महीना*",
+    "payment_status": "भुगतान की स्थिति*",
+    "bill_amount": "बिल की राशि",
+    "auto_generated": "(स्वचालित)"
+  },
+  "tips": {
+    "customer_name": "नाम में केवल अक्षर और स्थान होने चाहिए।",
+    "phone": "फ़ोन ठीक 10 अंकों का होना चाहिए।",
+    "email": "कृपया एक वैध ईमेल पता दर्ज करें।",
+    "units": "यूनिट एक सकारात्मक संख्या होनी चाहिए।"
+  },
+  "dialog": {
+    "delete_title": "हटाने की पुष्टि करें",
+    "delete_header": "ग्राहक बिल हटाएं",
+    "delete_content": "क्या आप वाकई {customerName} का बिल हटाना चाहते हैं?",
+    "confirm_button": "पुष्टि करें",
+    "cancel_button": "रद्द करें"
+  },
+  "chatbot": {
+    "greeting": "नमस्ते! मैं आज आपकी कैसे मदद कर सकता हूँ? आप मुझसे मीटर नंबर से बिल का विवरण पूछ सकते हैं।",
+    "bill_info": "{customerName} (मीटर: {meterNumber}) का {month} महीने का बिल ₹ {amount} है।",
+    "payment_status": "{customerName} के बिल (मीटर: {meterNumber}) की भुगतान स्थिति '{status}' है।",
+    "meter_not_found": "क्षमा करें, मुझे मीटर नंबर {meterNumber} से संबंधित कोई बिल नहीं मिला।",
+    "invalid_meter": "यह एक वैध मीटर नंबर नहीं लगता है।",
+    "help": "आप मुझसे ऐसे प्रश्न पूछ सकते हैं: 'मीटर 1001 का बिल क्या है?' या '1002 के लिए भुगतान की स्थिति'।",
+    "fallback": "मुझे क्षमा करें, मैं समझ नहीं पा रहा हूँ। कृपया मीटर नंबर का उपयोग करके बिल के बारे में पूछें।",
+    "input_placeholder": "बिल के बारे में पूछें...",
+    "units_info": "मीटर {meterNumber} के बिल में {units} यूनिट की खपत दिखाई गई है।",
+    "ask_for_meter": "आप किस मीटर नंबर के बारे में पूछ रहे हैं?"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "ta": "தமிழ் (Tamil)"
+  }
+}

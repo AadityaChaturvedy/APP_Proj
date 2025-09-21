@@ -1,0 +1,183 @@
+/* === GLOBAL STYLES === */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: "Inter", "San Francisco", "Helvetica Neue", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* === HEADER === */
+.header {
+    -fx-background-color: #1E1E1E;
+    -fx-padding: 10px 20px;
+    -fx-border-color: #2D2D2D;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.header .label {
+    -fx-text-fill: #A0A0A0;
+    -fx-font-weight: 500;
+    -fx-cursor: hand;
+}
+.header .label:hover {
+    -fx-text-fill: white;
+}
+.header .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #A0A0A0;
+}
+.header .button:hover {
+    -fx-background-color: #2D2D2D;
+    -fx-text-fill: white;
+}
+.header .icon {
+    -fx-fill: #A0A0A0;
+    -fx-shape: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"; /* Example */
+}
+
+/* === MAIN CONTENT & SECTIONS === */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.section-box {
+    -fx-background-color: #1E1E1E;
+    -fx-padding: 25px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-border-color: #2D2D2D;
+    -fx-border-width: 1px;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #E0E0E0;
+}
+
+/* === COMPONENTS === */
+.label {
+    -fx-text-fill: #B0B0B0;
+}
+
+.button {
+    -fx-background-color: #333333;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #444444;
+}
+
+#encrypt-button {
+    -fx-background-color: #0078D4;
+    -fx-text-fill: white;
+}
+#encrypt-button:hover {
+    -fx-background-color: #1085E0;
+}
+
+#decrypt-button {
+    -fx-background-color: #2D2D2D;
+    -fx-text-fill: #E0E0E0;
+}
+#decrypt-button:hover {
+    -fx-background-color: #3F3F3F;
+}
+
+.combo-box, .text-field, .password-field {
+    -fx-background-color: #2D2D2D;
+    -fx-text-fill: #E0E0E0;
+    -fx-border-color: #444444;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-prompt-text-fill: #777777;
+}
+
+/* FIX FOR COMBO BOX DROPDOWN TEXT */
+.combo-box-popup .list-view {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #444444;
+}
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #E0E0E0;
+    -fx-background-color: #2D2D2D;
+}
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #0078D4;
+    -fx-text-fill: white;
+}
+.combo-box-popup .list-view .list-cell:filled:selected {
+    -fx-background-color: #005A9E;
+    -fx-text-fill: white;
+}
+
+
+.check-box .box {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #444444;
+}
+.check-box:selected .mark {
+    -fx-background-color: #0078D4;
+}
+.check-box {
+    -fx-text-fill: #B0B0B0;
+}
+
+/* === TABLE VIEW === */
+.table-view {
+    -fx-background-color: #1E1E1E;
+    -fx-border-color: #2D2D2D;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+.table-view .column-header-background {
+    -fx-background-color: #1E1E1E;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: 600;
+    -fx-text-fill: #A0A0A0;
+}
+.table-view .table-cell {
+    -fx-text-fill: #D0D0D0;
+    -fx-border-color: transparent transparent #2D2D2D transparent;
+}
+.table-row-cell {
+    -fx-background-color: #1E1E1E;
+}
+.table-row-cell:odd {
+    -fx-background-color: #242424;
+}
+.table-row-cell:selected {
+    -fx-background-color: #005A9E;
+}
+
+/* === DROP ZONE === */
+.drop-zone {
+    -fx-border-color: #444444;
+    -fx-border-style: dashed;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+}
+
+/* === PROGRESS BAR === */
+.progress-bar .bar {
+    -fx-background-color: #0078D4;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4px;
+}
+.progress-bar .track {
+    -fx-background-color: #2D2D2D;
+    -fx-background-insets: 0;
+    -fx-background-radius: 4px;
+}
+

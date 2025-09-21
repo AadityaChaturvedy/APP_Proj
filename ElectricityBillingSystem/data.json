@@ -1,0 +1,56 @@
+[ {
+  "customerName" : "Arjun Kumar",
+  "meterNumber" : 1001,
+  "address" : "123 MG Road",
+  "city" : "Bangalore",
+  "state" : "Karnataka",
+  "phone" : "9876543210",
+  "email" : "arjun.k@example.com",
+  "unitsConsumed" : 150,
+  "billingMonth" : "August",
+  "paymentStatus" : "Paid"
+}, {
+  "customerName" : "Priya Sharma",
+  "meterNumber" : 1002,
+  "address" : "456 Park Street",
+  "city" : "Kolkata",
+  "state" : "West Bengal",
+  "phone" : "9876543211",
+  "email" : "priya.s@example.com",
+  "unitsConsumed" : 220,
+  "billingMonth" : "August",
+  "paymentStatus" : "Unpaid"
+}, {
+  "customerName" : "Ravi Patel",
+  "meterNumber" : 1003,
+  "address" : "789 High Street",
+  "city" : "Ahmedabad",
+  "state" : "Gujarat",
+  "phone" : "9876543212",
+  "email" : "ravi.p@example.com",
+  "unitsConsumed" : 95,
+  "billingMonth" : "July",
+  "paymentStatus" : "Paid"
+}, {
+  "customerName" : "Sunita Reddy",
+  "meterNumber" : 1004,
+  "address" : "101 Jubilee Hills",
+  "city" : "Hyderabad",
+  "state" : "Telangana",
+  "phone" : "9876543213",
+  "email" : "sunita.r@example.com",
+  "unitsConsumed" : 310,
+  "billingMonth" : "August",
+  "paymentStatus" : "Unpaid"
+}, {
+  "customerName" : "Testin",
+  "meterNumber" : 1005,
+  "address" : "Test",
+  "city" : "Test",
+  "state" : "Test",
+  "phone" : "9876543211",
+  "email" : "test@gmail.com",
+  "unitsConsumed" : 100,
+  "billingMonth" : "January",
+  "paymentStatus" : "Paid"
+} ]

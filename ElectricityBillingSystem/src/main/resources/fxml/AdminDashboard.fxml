@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ebill.controllers.AdminDashboardController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="header-bar" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+            <children>
+                <Label fx:id="dashboardTitle" styleClass="header-title" text="Admin Dashboard">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Language:" />
+                <ComboBox fx:id="languageComboBox" prefWidth="150.0" />
+                <ToggleButton fx:id="themeToggleButton" mnemonicParsing="false" text="Theme" />
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.75" styleClass="root" BorderPane.alignment="CENTER">
+            <items>
+                <VBox spacing="10.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                            <children>
+                                <TextField fx:id="searchField" promptText="Search by Name, Meter No, City..." HBox.hgrow="ALWAYS" />
+                                <Button fx:id="addButton" mnemonicParsing="false" onAction="#handleAddBill" styleClass="primary-button" text="Add Bill" />
+                                <Button fx:id="editButton" disable="true" mnemonicParsing="false" onAction="#handleEditBill" text="Edit Bill" />
+                                <Button fx:id="deleteButton" disable="true" mnemonicParsing="false" onAction="#handleDeleteBill" styleClass="danger-button" text="Delete Bill" />
+                            </children>
+                        </HBox>
+                        <TableView fx:id="billTableView" VBox.vgrow="ALWAYS">
+                            <columns>
+                                <TableColumn fx:id="meterNumberCol" prefWidth="100.0" text="Meter No." />
+                                <TableColumn fx:id="customerNameCol" prefWidth="175.0" text="Customer Name" />
+                                <TableColumn fx:id="cityCol" prefWidth="120.0" text="City" />
+                                <TableColumn fx:id="unitsCol" prefWidth="75.0" text="Units" />
+                                <TableColumn fx:id="amountCol" prefWidth="120.0" text="Amount" />
+                                <TableColumn fx:id="statusCol" prefWidth="100.0" text="Status" />
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                            </columnResizePolicy>
+                        </TableView>
+                    </children>
+                </VBox>
+                <TitledPane fx:id="chatbotPane" animated="false" collapsible="false" text="Chatbot Assistant">
+                    <content>
+                        <fx:include source="ChatbotView.fxml" />
+                    </content>
+                </TitledPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

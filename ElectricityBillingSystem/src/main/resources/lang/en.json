@@ -1,0 +1,71 @@
+{
+  "ui": {
+    "login_title": "System Login",
+    "username": "Username",
+    "password": "Password",
+    "login_button": "Login",
+    "login_error": "Invalid username or password.",
+    "dashboard_title": "Admin Dashboard",
+    "search_placeholder": "Search by Name, Meter No, City...",
+    "add_button": "Add Bill",
+    "edit_button": "Edit Bill",
+    "delete_button": "Delete Bill",
+    "save_button": "Save",
+    "cancel_button": "Cancel",
+    "chatbot_title": "Chatbot Assistant"
+  },
+  "table": {
+    "meter_number": "Meter No.",
+    "customer_name": "Customer Name",
+    "city": "City",
+    "units": "Units",
+    "amount": "Amount",
+    "status": "Status"
+  },
+  "form": {
+    "add_title": "Add New Bill",
+    "edit_title": "Edit Bill",
+    "customer_name": "Customer Name*",
+    "meter_number": "Meter Number",
+    "address": "Address",
+    "city": "City",
+    "state": "State",
+    "phone": "Phone*",
+    "email": "Email*",
+    "units_consumed": "Units Consumed*",
+    "billing_month": "Billing Month*",
+    "payment_status": "Payment Status*",
+    "bill_amount": "Bill Amount",
+    "auto_generated": "(Auto-Generated)"
+  },
+  "tips": {
+    "customer_name": "Name must contain only letters and spaces.",
+    "phone": "Phone must be exactly 10 digits.",
+    "email": "Please enter a valid email address.",
+    "units": "Units must be a positive number."
+  },
+  "dialog": {
+    "delete_title": "Confirm Deletion",
+    "delete_header": "Delete Customer Bill",
+    "delete_content": "Are you sure you want to delete the bill for {customerName}?",
+    "confirm_button": "Confirm",
+    "cancel_button": "Cancel"
+  },
+  "chatbot": {
+    "greeting": "Hello! How can I help you today? You can ask me for bill details by meter number.",
+    "bill_info": "The bill for {customerName} (Meter: {meterNumber}) for the month of {month} is ₹ {amount}.",
+    "payment_status": "The payment status for {customerName}'s bill (Meter: {meterNumber}) is '{status}'.",
+    "meter_not_found": "Sorry, I could not find any bill associated with meter number {meterNumber}.",
+    "invalid_meter": "That doesn't look like a valid meter number.",
+    "help": "You can ask me questions like: 'What is the bill for meter 1001?' or 'payment status for 1002'.",
+    "fallback": "I'm sorry, I don't understand. Please ask about a bill using a meter number.",
+    "input_placeholder": "Ask about a bill...",
+    "units_info": "The bill for meter {meterNumber} shows {units} units consumed.",
+    "ask_for_meter": "Which meter number are you asking about?"
+  },
+  "languages": {
+    "en": "English",
+    "hi": "हिंदी (Hindi)",
+    "ta": "தமிழ் (Tamil)"
+  }
+}

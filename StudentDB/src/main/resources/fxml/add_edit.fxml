@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.studentdb.controller.AddEditStudentController"
+      spacing="20" alignment="TOP_CENTER"
+      prefWidth="650" prefHeight="700">
+
+    <!-- VBox Padding -->
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Header -->
+    <Label text="Student Details" styleClass="form-header" />
+
+    <!-- Student Info Section -->
+    <VBox spacing="12" styleClass="form-section student-section">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15"/>
+        </padding>
+        <style>
+            -fx-background-color: #F3F4F6; 
+            -fx-background-radius: 10; 
+            -fx-border-radius: 10; 
+            -fx-border-color: #D1D5DB; 
+            -fx-border-width: 1;
+        </style>
+
+        <Label text="Name" />
+        <TextField fx:id="nameField" promptText="Enter student name" />
+
+        <Label text="Roll Number" />
+        <TextField fx:id="rollField" promptText="Enter roll number" />
+
+        <Label text="Course" />
+        <TextField fx:id="courseField" promptText="Enter course name" />
+
+        <Label text="Batch" />
+        <TextField fx:id="batchField" promptText="Enter batch" />
+
+        <Label text="Date of Birth" />
+        <DatePicker fx:id="dobPicker" promptText="Select DOB" />
+
+        <Label text="Email" />
+        <TextField fx:id="mailField" promptText="Enter email" />
+
+        <Label text="CGPA" />
+        <TextField fx:id="cgpaField" promptText="Enter CGPA" />
+    </VBox>
+
+    <!-- Parent Info Section -->
+    <VBox spacing="12" styleClass="form-section parent-section">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15"/>
+        </padding>
+        <style>
+            -fx-background-color: #EDE9FE; 
+            -fx-background-radius: 10; 
+            -fx-border-radius: 10; 
+            -fx-border-color: #C4B5FD; 
+            -fx-border-width: 1;
+        </style>
+
+        <Label text="Parent Details" />
+        <TextArea fx:id="parentField" promptText="Enter parent info" prefRowCount="4" wrapText="true" />
+    </VBox>
+
+    <!-- Action Buttons -->
+    <HBox spacing="15" alignment="CENTER_RIGHT" styleClass="form-buttons">
+        <Button text="Save" onAction="#onSave" styleClass="btn-save"/>
+        <Button text="Cancel" onAction="#onCancel" styleClass="btn-cancel"/>
+    </HBox>
+</VBox>
