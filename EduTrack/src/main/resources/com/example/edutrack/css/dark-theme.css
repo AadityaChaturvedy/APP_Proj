@@ -1,0 +1,77 @@
+.root {
+    /* --- Color Palette --- */
+    -fx-background: #1e1e1e;
+    -fx-body-background: #252526;
+    -fx-box-background: #2d2d2d;
+    -fx-control-inner-background: #313131;
+    -fx-control-inner-background-alt: #4a4a4a;
+    -fx-text-color-primary: #d4d4d4;
+    -fx-text-color-secondary: #a0a0a0;
+    -fx-text-base-color-on-accent: #ffffff;
+    -fx-accent: #0078D7;
+    -fx-accent-highlight: #2a92e8;
+    -fx-red: #d13438;
+}
+.label {
+    -fx-text-fill: -fx-text-color-primary;
+}
+.text-field {
+    -fx-prompt-text-fill: -fx-text-color-secondary;
+    -fx-text-fill: -fx-text-color-primary;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+.tab-label {
+    -fx-text-fill: -fx-text-color-primary;
+}
+
+/* ================================================================== */
+/* === LAYOUT & COMPONENT STYLING =================================== */
+/* ================================================================== */
+
+.tool-bar {
+    -fx-background-color: -fx-box-background;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: -fx-box-background;
+    -fx-opacity: 0.7;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: -fx-body-background;
+    -fx-border-color: -fx-accent;
+    -fx-border-width: 0 0 2 0;
+    -fx-opacity: 1.0;
+}
+
+.tab-pane .tab:hover {
+    -fx-opacity: 1.0;
+    -fx-background-color: derive(-fx-box-background, 15%);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -fx-accent;
+}
+
+.text-field:focused {
+    -fx-border-color: -fx-accent-highlight;
+    -fx-effect: dropshadow(gaussian, -fx-accent-highlight, 4, 0.3, 0, 0);
+}
+
+.button:hover {
+    -fx-background-color: -fx-accent-highlight;
+}
+
+.delete-button {
+    -fx-background-color: -fx-red;
+}
+.delete-button:hover {
+    -fx-background-color: derive(-fx-red, 20%);
+}

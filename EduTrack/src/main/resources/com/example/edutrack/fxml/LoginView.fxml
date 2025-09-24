@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" styleClass="background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.edutrack.controllers.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox alignment="CENTER" spacing="20.0" styleClass="login-container">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/com/example/edutrack/icons/app.png" />
+               </image>
+            </ImageView>
+            <VBox spacing="10.0" styleClass="form-container">
+               <children>
+                  <Label text="Username" />
+                  <TextField fx:id="usernameField" promptText="admin" />
+                  <Label text="Password" />
+                  <PasswordField fx:id="passwordField" onAction="#handleLogin" promptText="admin" />
+               </children>
+            </VBox>
+            <Button defaultButton="true" onAction="#handleLogin" text="Login" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
